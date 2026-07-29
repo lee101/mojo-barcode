@@ -1,0 +1,9 @@
+.pixi/
+dist/
+build/*.o
+__pycache__/
+*.so
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
