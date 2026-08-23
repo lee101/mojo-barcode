@@ -96,10 +96,10 @@ five runs and include Python wrapper allocation and conversion. A value above
 
 | Case | mojo-barcode | python-barcode | Speedup |
 |---|---:|---:|---:|
-| EAN-13 batch (100k) | 72.86 ms | 1126.77 ms | 15.46x |
-| Code 39 (100k chars) | 1.45 ms | 23.78 ms | 16.35x |
-| Code 128-C (200k digits) | 23.57 ms | 202.02 ms | 8.57x |
-| ITF (10k digits) | 0.28 ms | 17.07 ms | 60.83x |
+| EAN-13 batch (100k) | 66.18 ms | 1042.88 ms | 15.76x |
+| Code 39 (100k chars) | 1.40 ms | 22.82 ms | 16.31x |
+| Code 128-C (200k digits) | 21.72 ms | 180.99 ms | 8.33x |
+| ITF (10k digits) | 0.25 ms | 17.66 ms | 70.82x |
 
 No GPU path is included. Linear barcode encoding is table lookup and byte
 expansion with well under two arithmetic operations per byte moved, so host
